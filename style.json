@@ -14,6 +14,12 @@
       "type": "vector",
       "minzoom": 8,
       "url": "https://tileserver.geolonia.com/v2/tiles.json?key=YOUR-API-KEY"
+    },
+    "dem": {
+      "type": "raster-dem",
+      "tiles": [
+        "https://tileserver.geolonia.com/gsi-dem/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+      ]
     }
   },
   "sprite": "https://geoloniamaps.github.io/basic/basic",
@@ -23,7 +29,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#fefefe"
+        "background-color": "#fbf9e8"
       }
     },
     {
@@ -40,7 +46,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#d8e8c8",
+        "fill-color": "#daeca9",
         "fill-opacity": 1
       }
     },
@@ -58,8 +64,19 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#6a4",
-        "fill-opacity": 0.2,
+        "fill-color": "#BEE09D",
+        "fill-opacity": {
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              12,
+              0.5
+            ]
+          ]
+        },
         "fill-outline-color": "hsla(0, 0%, 0%, 0.03)",
         "fill-antialias": {
           "base": 1,
@@ -205,7 +222,27 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(223, 236, 218, 1)"
+        "fill-color": "#BEE09D"
+      }
+    },
+    {
+      "id": "hillshading",
+      "source": "dem",
+      "type": "hillshade",
+      "paint": {
+        "hillshade-exaggeration": {
+          "stops": [
+            [
+              4,
+              0.15
+            ],
+            [
+              12,
+              0
+            ]
+          ]
+        },
+        "hillshade-shadow-color": "#20e389"
       }
     },
     {
