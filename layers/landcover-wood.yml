@@ -9,7 +9,7 @@ filter:
 layout:
   visibility: visible
 paint:
-  fill-color: '#BEE09D'
+  fill-color: '#B8E88C'
   fill-opacity:
     stops:
     - - 11
