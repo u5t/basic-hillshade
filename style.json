@@ -29,7 +29,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#fbf9e8"
+        "background-color": "#fefefe"
       }
     },
     {
@@ -242,7 +242,7 @@
             ]
           ]
         },
-        "hillshade-shadow-color": "#20e389"
+        "hillshade-shadow-color": "#000000"
       }
     },
     {

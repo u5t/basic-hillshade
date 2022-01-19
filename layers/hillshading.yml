@@ -8,4 +8,4 @@ paint:
         - 0.15
       - - 12
         - 0
-  hillshade-shadow-color: "#20e389"
+  hillshade-shadow-color: "#000000"
