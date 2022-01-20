@@ -5,4 +5,4 @@ source-layer: water
 layout:
   visibility: visible
 paint:
-  fill-color: rgba(152, 209, 252, 1)
+  fill-color: rgba(101, 203, 249, 1)
