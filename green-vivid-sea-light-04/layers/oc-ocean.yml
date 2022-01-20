@@ -1,0 +1,39 @@
+id: oc-ocean200
+type: fill
+source: oceanus
+source-layer: oc-water
+filter:
+  - all
+  - - '=='
+    - - get
+      - class
+    - ocean
+layout:
+  visibility: visible
+paint:
+  fill-color:
+    - match
+    - ['get', 'depth']
+    - 200
+    - "#27BAEC"
+    - 1000
+    - "#24B8ED"
+    - 2000
+    - "#21B2EF"
+    - 3000
+    - "#1FB1EF"
+    - 4000
+    - "#1FAFF0"
+    - 5000
+    - "#1CADF1"
+    - 6000
+    - "#1AA8F2"
+    - 7000
+    - "#14A1F5"
+    - 8000
+    - "#0D96F9"
+    - 9000
+    - "#0A94F9"
+    - 10000
+    - "#0A92FA"
+    - "#048BFC"
