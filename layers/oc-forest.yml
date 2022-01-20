@@ -7,4 +7,4 @@ maxzoom: 8
 layout:
   visibility: visible
 paint:
-  fill-color: '#BEE09D'
+  fill-color: '#5CC780'
