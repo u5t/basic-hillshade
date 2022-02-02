@@ -29,7 +29,26 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#DAE2C1"
+        "background-color": {
+          "stops": [
+            [
+              1,
+              "#F2F5D6"
+            ],
+            [
+              5,
+              "#DAE2C1"
+            ],
+            [
+              8,
+              "#DAE2C1"
+            ],
+            [
+              12,
+              "#fefefe"
+            ]
+          ]
+        }
       }
     },
     {
