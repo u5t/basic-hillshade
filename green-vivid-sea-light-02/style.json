@@ -83,7 +83,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#B8E88C",
+        "fill-color": "#bce398",
         "fill-opacity": {
           "stops": [
             [
@@ -92,7 +92,7 @@
             ],
             [
               12,
-              0.5
+              0.4
             ]
           ]
         },
@@ -236,12 +236,23 @@
       "source": "oceanus",
       "source-layer": "oc-forest",
       "minzoom": 0,
-      "maxzoom": 8,
+      "maxzoom": 9,
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#A5D47B"
+        "fill-color": {
+          "stops": [
+            [
+              5,
+              "#A5D47B"
+            ],
+            [
+              8,
+              "#bce398"
+            ]
+          ]
+        }
       }
     },
     {
